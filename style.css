@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: #bada55; /* such a badass color */
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  padding: 10px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.credit {
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <title>AR Test page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>This is a test page for Augmented Reality (AR)</h1>
+      <p>Open this page on your smartphone</p>
+
+      <!-- Use it like any other HTML element -->
+      <model-viewer
+        src="assets/guitar-amp.gltf"
+        ios-src="assets/guitar-amp.usdz"
+        alt="A 3D model of an mischpult"
+        auto-rotate
+        camera-controls
+        background-color="#455A64"
+      ></model-viewer>
+
+      <p>Guitar AMP found on <a href="https://poly.google.com/view/3FiWjHDj0Zf" target="_blank">Google Poly</a></p>
+      <p>AR View handling is done via <a href="https://googlewebcomponents.github.io/model-viewer/" target="_blank">model-viewer</a> of Google Web Components </p>
+    </div>
+
+    <p class="credit">An experiment by <a href="https://michakrapp.com">Micha Krapp</a></p>
+  </body>
+</html>
