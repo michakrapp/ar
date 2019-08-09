@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Import the component -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <title>AR Test page</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1>Test page for Augmented Reality (AR)</h1>
-      <p>Open this page on your smartphone</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- Import the component -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <title>AR Test page</title>
+    </head>
+    <body>
+        <div class="wrapper">
+        <h1>Test page for Augmented Reality (AR)</h1>
+        <p>Open this page on your smartphone</p>
 
-      <!-- Use it like any other HTML element -->
-      <model-viewer
+        <!-- Use it like any other HTML element -->
+        <model-viewer
         src="assets/ElectricGuitar.glb"
         ios-src="assets/ElectricGuitar.usdz"
-        alt="A 3D model of an mischpult"
+        alt="A 3D model of an electric guitar"
         ar
         auto-rotate
         camera-controls
         background-color="#455A64"
-      ></model-viewer>
+        ></model-viewer>
 
-      <p>Electric guitar found on <a href="https://poly.google.com/view/eoSib2-NN9Y" target="_blank">Google Poly</a></p>
-      <p>AR View handling is done via <a href="https://googlewebcomponents.github.io/model-viewer/" target="_blank">model-viewer</a> of Google Web Components </p>
-    </div>
+        <p>Electric guitar found on <a href="https://poly.google.com/view/eoSib2-NN9Y" target="_blank">Google Poly</a></p>
 
-    <p class="credit">An experiment by <a href="https://michakrapp.com">Micha Krapp</a></p>
-  </body>
+        <model-viewer
+                src="assets/mischpult10_PBR_02_20K_2K.usdz"
+                ios-src="assets/mischpult10_PBR_02_20K_2K.usdz"
+                alt="A 3D model of an mischpult"
+                ar
+                auto-rotate
+                camera-controls
+                background-color="#455A64"
+        ></model-viewer>
+
+        <p>3D scanned modell of an actuall mixing desk <a href="https://m.thomann.de/gb/analogue_mixing_desks.html" target="_blank">from Thomann.de</a> </p>
+
+        <p>AR View handling is done via <a href="https://googlewebcomponents.github.io/model-viewer/" target="_blank">model-viewer</a> of Google Web Components </p>
+        </div>
+
+        <p class="credit">An experiment by <a href="https://michakrapp.com">Micha Krapp</a></p>
+    </body>
 </html>
