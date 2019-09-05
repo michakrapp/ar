@@ -3,24 +3,38 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: sans-serif;
-  background-color: #bada55; /* such a badass color */
-  margin: 0;
-  padding: 20px;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #bada55; /* such a badass color */
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .wrapper {
-  padding: 10px;
-  background-color: white;
+    padding: 10px;
+    background-color: white;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     */
+}
+
+.model-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.model {
+    width: 280px;
+    height: 280px;
 }
 
 .credit {

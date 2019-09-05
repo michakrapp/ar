@@ -10,38 +10,43 @@
         <title>AR Test page</title>
     </head>
     <body>
-        <div class="wrapper">
         <h1>Test page for Augmented Reality (AR)</h1>
         <p>Open this page on your smartphone</p>
 
-        <!-- Use it like any other HTML element -->
-        <model-viewer
-        src="assets/ElectricGuitar.glb"
-        ios-src="assets/ElectricGuitar.usdz"
-        alt="A 3D model of an electric guitar"
-        ar
-        auto-rotate
-        camera-controls
-        background-color="#455A64"
-        ></model-viewer>
+        <div class="wrapper">
 
-        <p>Electric guitar found on <a href="https://poly.google.com/view/eoSib2-NN9Y" target="_blank">Google Poly</a></p>
+            <div class="model-wrapper">
+                <div class="model">
+                    <!-- Use it like any other HTML element -->
+                    <model-viewer
+                            src="assets/ElectricGuitar.glb"
+                            ios-src="assets/ElectricGuitar.usdz"
+                            alt="A 3D model of an electric guitar"
+                            ar
+                            auto-rotate
+                            camera-controls
+                            background-color="#455A64"
+                    ></model-viewer>
+                    <p>Electric guitar found on <a href="https://poly.google.com/view/eoSib2-NN9Y" target="_blank">Google Poly</a></p>
+                </div>
+                <div class="model">
+                    <model-viewer
+                            src="assets/mischpult10_PBR_02_20K_2K.usdz"
+                            ios-src="assets/mischpult10_PBR_02_20K_2K.usdz"
+                            alt="A 3D model of an mischpult"
+                            ar
+                            auto-rotate
+                            camera-controls
+                            background-color="#455A64"
+                    ></model-viewer>
+                    <p>3D scanned model of an actual <a href="https://m.thomann.de/gb/the_t_mix_24.12.htm" target="_blank">the t.mix 24.12</a> mixing desk from Thomann.de</p>
 
-        <model-viewer
-                src="assets/mischpult10_PBR_02_20K_2K.usdz"
-                ios-src="assets/mischpult10_PBR_02_20K_2K.usdz"
-                alt="A 3D model of an mischpult"
-                ar
-                auto-rotate
-                camera-controls
-                background-color="#455A64"
-        ></model-viewer>
+                </div>
+            </div>
 
-        <p>3D scanned model of an actual <a href="https://m.thomann.de/gb/the_t_mix_24.12.htm" target="_blank">the t.mix 24.12</a> mixing desk from Thomann.de</p>
-
-        <p>AR View handling is done via <a href="https://googlewebcomponents.github.io/model-viewer/" target="_blank">model-viewer</a> of Google Web Components </p>
+            <p>AR View handling is done via <a href="https://googlewebcomponents.github.io/model-viewer/" target="_blank">model-viewer</a> of Google Web Components</p>
         </div>
 
-        <p class="credit">An experiment by <a href="https://michakrapp.com">Micha Krapp</a></p>
+        <p class="credit">An experiment by <a href="https://michakrapp.com">Micha Krapp</a>. Code on <a href="https://github.com/michakrapp/ar" target="_blank">GitHub</a>.</p>
     </body>
 </html>
