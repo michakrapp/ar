@@ -1,5 +1,5 @@
 # AR - Augmented Reality
 
-AR test page with `element-viewer` from [Google Web Components](https://googlewebcomponents.github.io/model-viewer/)
+AR test page with `element-viewer` from [Google Web Components](https://modelviewer.dev)
 
-Site: https://ar.michakrapp.com/
+Site: https://michakrapp.github.io/ar/
